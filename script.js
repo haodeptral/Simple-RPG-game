@@ -282,3 +282,19 @@ function pick(guess) {
     }
   }
 }
+document.addEventListener('keydown', function(event) {
+  switch(event.key) {
+    case '1':
+      document.getElementById('button1').click();
+      break;
+    case '2':
+      document.getElementById('button2').click();
+      break;
+    case '3':
+      document.getElementById('button3').click();
+      break;
+    default:
+      // Do nothing for other keys
+      break;
+  }
+});
